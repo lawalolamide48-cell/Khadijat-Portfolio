@@ -1,3 +1,15 @@
+section {
+  padding: 80px 20px;
+}
+
+.section-heading {
+  margin-bottom: 40px;
+}
+
+p {
+  line-height: 1.7;
+}
+
 :root {
   --violet: #2D1B69;
   --violet-dark: #1a0f3f;
@@ -365,24 +377,32 @@ button:focus-visible, a:focus-visible {
   display: flex;
   flex-direction: column;
   gap: 18px;
-  max-width: 900px;
+  max-width: 980px;
   margin: 0 auto;
   align-items: flex-start;
 }
 .project-visual {
-  border: 1px solid var(--line);
-  border-radius: 12px;
+  width: 100%;
+  border-radius: 14px;
   overflow: hidden;
+  border: 1px solid var(--line);
   background: #eef0fc;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.06);
+  transition: transform 300ms ease, box-shadow 300ms ease;
+}
+.project:hover .project-visual {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 45px rgba(0,0,0,0.10);
 }
 .project-visual img {
   width: 100%;
   height: auto;
   display: block;
-  transition: transform 400ms ease;
+  transition: transform 500ms ease;
 }
+
 .project-visual:hover img {
-  transform: scale(1.015);
+  transform: scale(1.03);
 }
 .project-index, .skill-number {
   margin: 0 0 14px;
@@ -398,18 +418,14 @@ button:focus-visible, a:focus-visible {
   gap: 12px;
 }
 .project-details h3 {
-  margin: 0 0 12px;
-  font-family: Georgia, serif;
-  font-size: 32px;
-  line-height: 1.2;
-  color: var(--violet);
-  letter-spacing: -0.3px;
-}
-.project-details > p:not(.project-index) {
+  font-size: 30px;
+  line-height: 1.25;
   margin: 0;
+}
+.project-details > p {
   color: var(--muted);
-  line-height: 1.6;
-  text-align: left;
+  font-size: 15px;
+  line-height: 1.7;
 }
 .project-points {
   margin: 12px 0;
@@ -418,21 +434,16 @@ button:focus-visible, a:focus-visible {
 }
 .project-points li {
   position: relative;
-  margin: 0 0 11px;
-  padding-left: 20px;
-  color: #3d3550;
+  padding-left: 18px;
+  margin-bottom: 10px;
   font-size: 14px;
-  text-align: left;
+  color: #3d3550;
 }
+
 .project-points li::before {
-  position: absolute;
-  top: 0.62em;
-  left: 0;
-  width: 7px;
-  height: 7px;
-  content: "";
-  background: var(--gold);
-  border-radius: 1px;
+  width: 6px;
+  height: 6px;
+  top: 0.65em;
 }
 .tech-list {
   display: flex;
@@ -440,14 +451,17 @@ button:focus-visible, a:focus-visible {
   gap: 8px;
 }
 .tech-list span {
-  padding: 5px 10px;
-  border: 1px solid var(--line);
+  padding: 6px 12px;
+  font-size: 11px;
   border-radius: 999px;
   background: white;
-  color: var(--violet);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: 0.04em;
+  border: 1px solid var(--line);
+  transition: all 200ms ease;
+}
+
+.tech-list span:hover {
+  transform: translateY(-2px);
+  border-color: var(--violet);
 }
 .project-links {
   margin-top: 28px;
