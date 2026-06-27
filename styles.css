@@ -362,28 +362,28 @@ button:focus-visible, a:focus-visible {
   text-align: justify;
 }
 .project {
-  margin-top: 40px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 18px;
+  max-width: 900px;
+  margin: 0 auto;
+  align-items: flex-start;
 }
 .project-visual {
-  display: block;
-  overflow: hidden;
   border: 1px solid var(--line);
   border-radius: 12px;
+  overflow: hidden;
   background: #eef0fc;
 }
 .project-visual img {
   width: 100%;
   height: auto;
   display: block;
-  object-fit: cover;
-  border-radius: 12px;
   transition: transform 400ms ease;
 }
-.project-visual:hover img { transform: scale(1.015); }
-
+.project-visual:hover img {
+  transform: scale(1.015);
+}
 .project-index, .skill-number {
   margin: 0 0 14px;
   color: var(--coral);
