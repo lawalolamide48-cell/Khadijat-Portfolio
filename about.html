@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="About Khadijat Olamide Lawal — Administrative Professional and Full-Stack Web Developer." />
+    <title>About | Khadijat Olamide Lawal</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <style>
+      .about-page {
+        width: min(calc(100% - 48px), 860px);
+        margin: 0 auto;
+        padding: 80px 0 120px;
+      }
+      .about-page .back-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        color: var(--violet);
+        font-size: 14px;
+        font-weight: 700;
+        text-decoration: none;
+        margin-bottom: 48px;
+        transition: color 160ms;
+      }
+      .about-page .back-link:hover { color: var(--coral); }
+      .about-page h1 {
+        font-family: Georgia, serif;
+        font-size: clamp(36px, 5vw, 58px);
+        color: var(--violet);
+        line-height: 1.1;
+        margin: 0 0 40px;
+        letter-spacing: -0.5px;
+      }
+      .about-page p {
+        font-size: 17px;
+        line-height: 1.8;
+        color: var(--muted);
+        margin: 0 0 24px;
+        text-align: justify;
+      }
+      .about-page p.lead {
+        font-family: Georgia, serif;
+        font-size: clamp(22px, 2vw, 28px);
+        color: var(--ink);
+        line-height: 1.5;
+      }
+      .about-page .divider {
+        width: 48px;
+        height: 3px;
+        background: var(--coral);
+        margin: 40px 0;
+        border-radius: 2px;
+      }
+      @media (max-width: 620px) {
+        .about-page { padding: 48px 0 80px; }
+        .about-page h1 { font-size: 34px; }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="site-header">
+      <nav class="site-nav" aria-label="Main navigation">
+        <a class="brand" href="index.html" aria-label="Khadijat Olamide Lawal, home">KOL<span>.</span></a>
+        <button class="menu-button" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-links">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav-links" id="nav-links">
+          <a href="index.html#about">About</a>
+          <a href="index.html#work">Work</a>
+          <a href="index.html#experience">Experience</a>
+          <a href="index.html#skills">Skills</a>
+          <a href="index.html#contact">Contact</a>
+          <a class="nav-cv" href="assets/Khadijat-Olamide-Lawal-CV.pdf" download>View CV</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="about-page">
+        <a class="back-link" href="index.html">&larr; Back to portfolio</a>
+        <p class="eyebrow">About me</p>
+        <h1>Organized by experience.<br />Curious by nature.</h1>
+
+        <div style="margin: 32px 0 40px; display:flex; gap:32px; align-items:center; flex-wrap:wrap;">
+          <img src="assets/profile.jpg" alt="Khadijat Olamide Lawal" style="width:140px; height:140px; object-fit:cover; object-position:center top; border-radius:50%; border:4px solid white; box-shadow:0 8px 32px rgba(45,27,105,0.15); flex-shrink:0;" />
+          <div>
+            <p style="margin:0; font-size:22px; font-family:Georgia,serif; font-weight:700; color:var(--violet);">Khadijat Olamide Lawal</p>
+            <p style="margin:6px 0 0; color:var(--coral); font-size:13px; font-weight:800; text-transform:uppercase; letter-spacing:0.1em;">Administrative Professional &amp; Full-Stack Developer</p>
+          </div>
+        </div>
+
+        <p class="lead">
+          I am an administrative professional and full-stack developer with a
+          practical understanding of how people, information, and processes work together.
+        </p>
+
+        <div class="divider"></div>
+
+        <p>
+          My background spans executive support, office operations, customer service,
+          financial reporting, scheduling, and digital communication. Through Tech Studio
+          Academy's Full-Stack programme I built on that foundation with a complete
+          web development toolkit: HTML5, CSS3, JavaScript, React, TypeScript, Node.js,
+          Express, REST APIs, MongoDB, Tailwind CSS, Vite, and Git — covering everything
+          from responsive interfaces to secured backend services and cloud deployment.
+        </p>
+        <p>
+          Over four years of administrative experience, I developed a keen eye for
+          efficiency, accuracy, and stakeholder communication. I have managed executive
+          calendars, prepared briefing documents, tracked departmental budgets, processed
+          invoices, and coordinated complex schedules across multiple organisations —
+          all while maintaining a high standard of professionalism in both on-site and
+          fully remote environments.
+        </p>
+        <p>
+          Transitioning into technology felt like a natural extension of that operational
+          mindset. I approach software with the same attention to detail I brought to
+          office management: every interface decision has a human on the other end, and
+          every line of code either helps or hinders their experience.
+        </p>
+        <p>
+          That combination lets me approach software with empathy and structure. I care
+          about interfaces that feel clear, responsible, and genuinely useful — and about
+          the operational thinking that makes digital products work in the real world.
+        </p>
+        <p>
+          I am currently open to frontend development, full-stack, administrative,
+          executive support, and hybrid operations roles — on-site or remote.
+        </p>
+
+        <div class="divider"></div>
+
+        <a class="button button-primary" href="index.html#contact">Get in touch &rarr;</a>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; <span id="year">2026</span> Khadijat Olamide Lawal.</p>
+      <p>Designed and developed by Khadijat.</p>
+      <a href="index.html">Back to home</a>
+    </footer>
+  </body>
+</html>
