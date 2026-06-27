@@ -368,20 +368,17 @@ button:focus-visible, a:focus-visible {
   gap: 20px;
 }
 .project-visual {
-  min-height: 500px;
   display: block;
   overflow: hidden;
   border: 1px solid var(--line);
-  border-radius: 8px;
+  border-radius: 12px;
   background: #eef0fc;
 }
 .project-visual img {
   width: 100%;
   height: auto;
-  min-height: unset;
-  object-fit: cover;
-  object-position: top center;
   display: block;
+  object-fit: cover;
   border-radius: 12px;
   transition: transform 400ms ease;
 }
@@ -415,7 +412,7 @@ button:focus-visible, a:focus-visible {
   text-align: left;
 }
 .project-points {
-  margin: 24px 0;
+  margin: 12px 0;
   padding: 0;
   list-style: none;
 }
@@ -425,7 +422,7 @@ button:focus-visible, a:focus-visible {
   padding-left: 20px;
   color: #3d3550;
   font-size: 14px;
-  text-align: justify;
+  text-align: left;
 }
 .project-points li::before {
   position: absolute;
